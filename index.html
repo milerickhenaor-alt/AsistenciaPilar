@@ -20,7 +20,7 @@
     font-family: 'Libre Baskerville', Georgia, serif;
   }
   .card {
-    width: 100%; max-width: 780px;
+    width: 100%; max-width: 860px;
     background: rgba(255,253,247,0.88);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
@@ -28,7 +28,7 @@
     border-radius: 4px; overflow: hidden;
     box-shadow: 0 8px 40px rgba(60,48,28,0.15);
   }
-  .content { padding: 48px 60px 36px; color: #3a3020; }
+  .content { padding: 48px 68px 36px; color: #3a3020; }
   .saludo { font-style: italic; font-size: 15.5px; color: #5a4a30; margin-bottom: 20px; line-height: 1.7; }
   .body-text { font-size: 13.5px; line-height: 1.9; color: #3a3020; margin-bottom: 16px; text-align: justify; }
   .arrow-list { list-style: none; margin: 4px 0 20px 0; }
@@ -38,7 +38,7 @@
   .btn-row { display: flex; gap: 18px; justify-content: center; margin-bottom: 8px; }
   .btn-accion {
     background: #4a3e2a; color: #f5efe0; border: none;
-    border-radius: 30px; padding: 11px 32px;
+    border-radius: 30px; padding: 11px 40px;
     font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 13px; cursor: pointer; transition: background 0.2s;
   }
@@ -56,11 +56,14 @@
   }
   .modal-overlay.active { display: flex; }
   .modal-box {
-    background: #fffdf7; border: 0.5px solid #c8b99a;
-    border-radius: 14px; padding: 36px 40px;
-    width: 90%; max-width: 440px;
+    background: rgba(255,253,247,0.95);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 0.5px solid #c8b99a;
+    border-radius: 14px; padding: 40px 52px;
+    width: 92%; max-width: 600px;
   }
-  .modal-title { font-size: 17px; font-weight: 700; color: #3a3020; text-align: center; margin-bottom: 22px; }
+  .modal-title { font-size: 17px; font-weight: 700; color: #3a3020; text-align: center; margin-bottom: 24px; }
   .form-group { margin-bottom: 16px; }
   .form-group label { display: block; font-size: 11px; color: #6b5a3a; margin-bottom: 6px; letter-spacing: 0.8px; text-transform: uppercase; }
   .form-group input {
@@ -73,7 +76,7 @@
   .form-group input:focus { border-color: #7a6a50; }
   .modal-btns { display: flex; gap: 12px; margin-top: 20px; }
   .modal-btns button {
-    flex: 1; padding: 10px; border-radius: 30px; border: none;
+    flex: 1; padding: 11px; border-radius: 30px; border: none;
     font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 13px; cursor: pointer; transition: background 0.2s;
   }
@@ -86,10 +89,9 @@
   .status-msg.error { color: #8a2020; }
   .spinner { display: none; text-align: center; font-size: 12px; color: #7a6a50; font-style: italic; margin-top: 12px; }
   .spinner.active { display: block; }
-  @media (max-width: 560px) {
+  @media (max-width: 600px) {
     .content { padding: 28px 20px 24px; }
-    .btn-row { flex-direction: column; align-items: center; }
-    .modal-box { padding: 28px 20px; }
+    .modal-box { padding: 28px 24px; }
   }
 </style>
 </head>
@@ -98,10 +100,15 @@
 <div class="card">
   <div class="content">
     <p class="saludo">Reciban todos un cordial saludo, esperamos se encuentren muy bien,</p>
+
     <p class="body-text">Como algunos de ustedes recordarán, a finales de este mes la docente <strong>María del Pilar Prado Brand</strong> culminará una importante etapa de su vida profesional al acogerse a su jubilación. Durante muchos años, su liderazgo, compromiso y calidad humana han dejado una huella significativa en quienes hemos tenido la oportunidad de trabajar a su lado.</p>
+
     <p class="body-text">Por esta razón, desde la Unidad de UAMVIRTUAL estamos organizando un encuentro especial con el propósito de expresarle nuestro agradecimiento, reconocimiento y cariño, y de acompañarla en este momento tan significativo.</p>
-    <p class="body-text">Sabemos que, a lo largo de su trayectoria en la Universidad, la docente María del Pilar ha compartido con múltiples equipos, proyectos y procesos institucionales. Por ello, queremos extender esta invitación a aquellas personas que deseen acompañarnos en este homenaje y hacer parte de esta celebración.</p>
+
+    <p class="body-text">Sabemos que, a lo largo de su trayectoria en la Universidad, ha compartido con múltiples equipos, proyectos y procesos institucionales. Por ello, queremos extender esta invitación a aquellas personas que deseen acompañarnos en este homenaje y hacer parte de esta celebración.</p>
+
     <p class="body-text">Esta iniciativa surge de un grupo de colaboradores, compañeros y amigos que desean brindarle una despedida memorable. Para quienes estén interesados en participar, compartimos la siguiente información:</p>
+
     <ul class="arrow-list">
       <li>La fecha elegida para el evento será el próximo <strong>miércoles 24 de junio</strong>.</li>
       <li>El aporte será de <strong>$50.000 por persona</strong>.</li>
@@ -109,12 +116,16 @@
       <li>La fecha límite para entregar el dinero será el <strong>martes 16 de junio</strong>.</li>
       <li>La persona encargada de la recepción de dinero es <strong>Laura María Henao</strong>, auxiliar de diseño gráfico de la unidad de UAMVIRTUAL.</li>
     </ul>
-    <p class="body-text">De igual manera, les solicitamos muy amablemente manejar esta información con la mayor discreción posible, independientemente de su participación en el evento, con el fin de conservar el carácter sorpresa de esta celebración.</p>
-    <p class="cierre">Nos encantaría contar con la presencia de todos ustedes, y agradecemos de antemano tu atención, apoyo y disposición.</p>
+
+    <p class="body-text">De igual manera, les solicitamos muy amablemente manejar esta información con la mayor discreción posible, independientemente de su participación en el evento, con el fin de conservar el carácter sorpresa de la celebración.</p>
+
+    <p class="cierre">Nos encantaría contar con la presencia de todos ustedes, y agradecemos de antemano su atención, apoyo y disposición.</p>
+
     <div class="btn-row">
-      <button class="btn-accion" onclick="abrirModal('confirmar')">➤ Confirmar asistencia ➤</button>
+      <button class="btn-accion" onclick="abrirModal()">➤ Confirmar asistencia ➤</button>
     </div>
   </div>
+
   <div class="footer-bar">
     Si considera que esta información es del interés de alguien que no la ha recibido, por favor enviéselo y comuníquelo al correo lauram.henaoa@autonoma.edu.co &nbsp;&nbsp; Gracias.
   </div>
@@ -123,7 +134,7 @@
 <!-- MODAL -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-box">
-    <p class="modal-title" id="modalTitle">Confirmar asistencia</p>
+    <p class="modal-title">Confirmar asistencia</p>
     <div class="form-group">
       <label>Nombre completo</label>
       <input type="text" id="inputNombre" placeholder="Tu nombre completo" autocomplete="name"/>
@@ -143,12 +154,8 @@
 
 <script>
   var SHEET_URL = 'https://script.google.com/macros/s/AKfycbwOPk5Y4HNi7En5FxS-OEdffNp8xNBD91wL3G0Sd1k7R1ztSEXREnS_GgEa4czJNUNh/exec';
-  var accionActual = '';
 
-  function abrirModal(accion) {
-    accionActual = accion;
-    document.getElementById('modalTitle').textContent =
-      accion === 'confirmar' ? 'Confirmar asistencia' : 'Declinar invitación';
+  function abrirModal() {
     document.getElementById('inputNombre').value = '';
     document.getElementById('inputArea').value = '';
     document.getElementById('statusMsg').textContent = '';
@@ -183,18 +190,12 @@
     spinner.classList.add('active');
     statusEl.textContent = '';
 
-    // Construimos la URL con parámetros GET — compatible 100% con Apps Script sin CORS
     var params = new URLSearchParams();
     params.append('nombre',    nombre);
     params.append('area',      area || '—');
-    params.append('respuesta', accionActual === 'confirmar' ? 'Confirmado' : 'Declinó');
+    params.append('respuesta', 'Confirmado');
     params.append('fecha',     fecha);
 
-    // Usamos un <img> trick para disparar la petición sin bloqueo CORS
-    // Y en paralelo hacemos fetch no-cors como respaldo
-    var urlConParams = SHEET_URL + '?' + params.toString();
-
-    // Método principal: fetch POST con URLSearchParams (funciona con e.parameter en Apps Script)
     fetch(SHEET_URL, {
       method: 'POST',
       mode: 'no-cors',
@@ -204,9 +205,7 @@
     .then(function() {
       spinner.classList.remove('active');
       statusEl.className = 'status-msg';
-      statusEl.textContent = accionActual === 'confirmar'
-        ? '¡Asistencia confirmada, ' + nombre + '! Tu respuesta fue registrada ✓'
-        : 'Respuesta registrada. ¡Gracias por avisar, ' + nombre + '! ✓';
+      statusEl.textContent = '¡Asistencia confirmada, ' + nombre + '! Tu respuesta fue registrada ✓';
       setTimeout(cerrarModal, 3200);
     })
     .catch(function() {
