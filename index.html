@@ -293,7 +293,14 @@
 
   console.log("ENVIANDO FORMULARIO");
 
-  return true;
+  console.log(
+    "ACTION:",
+    document.getElementById('asistenciaForm').action
+  );
+
+  document.getElementById('asistenciaForm').submit();
+
+  return false;
 }
 
   // Cierra modal al hacer clic fuera
